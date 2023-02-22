@@ -1,0 +1,248 @@
+:root {
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+    --Lightslateblue : rgb(120, 87, 255);
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.card {
+    width: 550px;
+    height: auto;
+    display: flex;
+    box-shadow: 2px 4px 8px rgba(120, 87, 255, 0.2);
+    border-radius: 25px;
+}
+
+.card .left {
+    height: 100%;
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: var(--White);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .left h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--Lightlavender);
+}
+
+.card .left .score {
+    margin-top: 30px;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.card .left .score p {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.card .left .score span {
+    color: var(--Lightlavender);
+    font-size: 14px;
+}
+
+.card .left h4 {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.card .left .comment {
+    margin-top: 10px;
+    width: 85%;
+}
+
+.card .left .comment {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.4;
+    color: var(--Lightlavender);
+}
+
+.card .right {
+    padding: 30px;
+    width: 50%;
+}
+
+.card .right h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--Darkgrayblue);
+}
+
+.card .right ul {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card .right ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.card .right ul li:nth-child(1) {
+    background-color: hsla(0, 100%, 92%, 0.1);
+}
+
+.card .right ul li:nth-child(2) {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.card .right ul li:nth-child(3) {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.card .right ul li:nth-child(4) {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.card .right ul li .trait {
+    display: flex;
+    align-items: center;
+}
+
+.card .right .redting {
+    color: var(--Lightred);
+}
+
+.card .right .orangeting {
+    color: var(--Orangeyyellow);
+}
+
+.card .right .greenting {
+    color: var(--Greenteal);
+}
+
+.card .right .blueting {
+    color: var(--Cobaltblue);
+}
+
+
+.card .right ul li .trait img {
+    margin-right: 8px;
+}
+
+.card .right .mark {
+    color: hsl(241, 82%, 85%);
+}
+
+.card .right .mark span {
+    color: var(--Darkgrayblue);
+}
+
+.card .right button {
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--Darkgrayblue);
+    color: #fff;
+}
+
+@media screen and (max-width:375px) {
+    .container {
+        height: 100%;
+        width: 100%;
+        display: unset;
+    }
+    
+    .card {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: none;
+    }
+
+    .card .left {
+        width: 100%;
+        height: 45%;
+        padding: 10px 30px 30px 30px;
+        border-radius: 0 0 25px 25px;
+    }
+
+    .card .right {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .card .right ul {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .card .right ul li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        border-radius: 5px;
+    }
+
+    .card .right button {
+        margin-top: 30px;
+        width: 100%;
+        height: 55px;
+        border-radius: 30px;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'Hanken Grotesk', sans-serif;
+        background-color: var(--Darkgrayblue);
+        color: #fff;
+    }
+}
